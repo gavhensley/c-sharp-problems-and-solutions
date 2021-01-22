@@ -83,6 +83,16 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE INTEGERS EQUAL?\n");
 
             // Enter your solution here
+            
+            Console.WriteLine("Can you give me an integer?");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Great! Now type in another and I will tell you if they are equal.");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            if (num1==num2)
+                 Console.WriteLine("Those two integers are equal to each other.");
+            else Console.WriteLine("Those integers are not equal to each other.");
+         
+            
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -97,6 +107,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("EVEN OR ODD?\n");
 
             // Enter your solution here
+            Console.WriteLine("Can you type out a number? I will tell you if it is even or odd.");
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
