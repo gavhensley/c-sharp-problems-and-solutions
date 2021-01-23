@@ -213,6 +213,27 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            // define number of diners
+            Console.WriteLine("How many diners are at the table?");
+            int numdiner = Convert.ToInt32(Console.ReadLine());
+            // define cost per diner
+            Console.WriteLine("How much is everyone paying if everyone pays the same amount?");
+            Console.Write("$"); int numpay = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("You're bill is $" + (numdiner * numpay));
+            int billtotal = numdiner * numpay;
+            // if bill is over $50 then give a 10% discount
+            if (billtotal > 50)
+            {
+                Console.WriteLine("Your bill is over $50! Because of Customer Appreciation Week, you get 10% off!");
+                Console.WriteLine("You're new bill is $" + (billtotal - (billtotal * .10)));
+            }
+            // if bill is not, then give a 5% discount
+            else
+            {
+                Console.WriteLine("It is Customer Appreciation week! Customers get a 10% discount for orders of $50 and above!");
+                Console.WriteLine("Since your bill was $" + billtotal + ", you get 5% off! Your new bill is $" + (billtotal - (billtotal * .05)) + "!");
+            }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
