@@ -108,6 +108,10 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
             Console.WriteLine("Can you type out a number? I will tell you if it is even or odd.");
+            int numoe = Convert.ToInt32(Console.ReadLine());
+            if (numoe%2 == 0)
+                Console.WriteLine("That number is even.");
+            else Console.WriteLine("That number is odd.");
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -122,6 +126,23 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("VOWEL OR CONSONANT?\n");
 
             // Enter your solution here
+            Console.WriteLine("Give me a letter and I will tell you if it is a vowel or a consonant.");
+                string userletter = Console.ReadLine();
+            string userletterl = userletter.ToLower();
+            if (userletterl.Equals("a"))
+            { Console.WriteLine("That is a vowel."); }
+            else if (userletterl.Equals("e"))
+            { Console.WriteLine("That is a vowel."); }
+            else if (userletterl.Equals("i"))
+            { Console.WriteLine("That is a vowel."); }
+            else if (userletterl.Equals("o"))
+            { Console.WriteLine("That is a vowel."); }
+            else if (userletterl.Equals("u"))
+            { Console.WriteLine("That is a vowel."); }
+            else if (userletterl.Equals("y"))
+            { Console.WriteLine("That is sometimes a vowel."); }
+            else
+            { Console.WriteLine("That is a consonant."); }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -136,6 +157,18 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("FIND THE LARGEST NUMBER\n");
 
             // Enter your solution here
+            Console.WriteLine("Please give me a number");
+            int unum1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Great! Now give me a second number and I will tell you if it is greater or less than the first.");
+            int unum2 = Convert.ToInt32(Console.ReadLine());
+            if (unum2 > unum1)
+            { Console.WriteLine(unum2 + " is greater than " + unum1 +"."); }
+            else if (unum2 < unum1)
+            { Console.WriteLine(unum2 + " is less than " + unum1 + "."); }
+            else
+                Console.WriteLine("Those are equal.");
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -149,6 +182,14 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("DIVISIBLE BY 3\n");
 
             // Enter your solution here
+            Console.WriteLine("Please give me a number, and I will tell you if it is divisible by 3.");
+            int divnum = Convert.ToInt32(Console.ReadLine());
+            if (divnum % 3 == 0)
+            { Console.WriteLine("That number is divisible by 3."); }
+            else
+                Console.WriteLine("That number is not divisible by 3.");
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
