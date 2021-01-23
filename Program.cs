@@ -259,6 +259,21 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("AGE CATEGORY\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter the subject's aget and we will determine which demographic they fit into.");
+            Console.Write("Age: "); int ageosub = Convert.ToInt32(Console.ReadLine());
+         
+            if (ageosub >= 0 && ageosub <= 2)
+            { Console.WriteLine("Still in Mama's Arms"); }
+            else if (ageosub >= 3 && ageosub <= 4)
+            { Console.WriteLine("Preschool Maniac"); }
+            else if (ageosub >= 5 && ageosub <= 11)
+            { Console.WriteLine("Elementary School"); }
+            else if (ageosub >= 12 && ageosub <=14) { Console.WriteLine("Middle School"); }
+            else if (ageosub >= 15 && ageosub <= 18) { Console.WriteLine("High School"); }
+            else if (ageosub >= 19 && ageosub <= 22) { Console.WriteLine("College"); }
+            else if (ageosub >= 23 && ageosub <= 65) { Console.WriteLine("Woking for the Man"); }
+            else if (ageosub >= 66 && ageosub <= 100) { Console.WriteLine("The Golden Years"); }
+            else { Console.WriteLine("This program is for humans."); }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
