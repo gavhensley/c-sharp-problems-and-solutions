@@ -373,6 +373,12 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE NAMES THE SAME?\n");
 
             // Enter your solution here
+            Console.WriteLine("Type out a name, please.");
+            string name1 = Console.ReadLine();
+            Console.WriteLine("Great! Now give me a second name, and I will tell you if it is the same or different from the first.");
+            string name2 = Console.ReadLine();
+            if (name1.Equals(name2)) { Console.WriteLine("The names are the same."); }
+            else { Console.WriteLine("The names are different."); }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
