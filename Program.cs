@@ -389,10 +389,15 @@ namespace ComputationalThinkingExercises
             // Ask the user for their first name and where they were born.
             // Print a sentence to the console that repeats this information.
 
-            Console.Clear();
+            Console.Clear(); 
             Console.WriteLine("NAME AND PLACE OF BIRTH\n");
 
             // Enter your solution here
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("And where were you born?");
+            string birthPlace = Console.ReadLine();
+            Console.WriteLine("Gotcha! Just to confirm, your name is " + name + ", and you were born in " + birthPlace + ".");
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
