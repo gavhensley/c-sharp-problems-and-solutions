@@ -345,6 +345,18 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("WHICH NAME IS LONGER?\n");
 
             // Enter your solution here
+            Console.WriteLine("What is your first name?");
+            string fstName = Console.ReadLine();
+            Console.WriteLine("What is your second name?");
+            string sndName = Console.ReadLine();
+            int count1 = 0;
+            int count2 = 0;
+            foreach (char c in fstName) { count1++; }
+            foreach (char c in sndName) { count2++; }
+            if (count1 > count2) { Console.WriteLine("Fist is longer."); }
+            else if (count1 == count2) { Console.WriteLine("Same-sies!"); }
+            else { Console.WriteLine("Last must be longer!"); }
+            
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
