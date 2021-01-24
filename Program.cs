@@ -157,7 +157,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("FIND THE LARGEST NUMBER\n");
 
             // Enter your solution here
-            Console.WriteLine("Please give me a number");
+            Console.WriteLine("Please give me a number.");
             int unum1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Great! Now give me a second number and I will tell you if it is greater or less than the first.");
             int unum2 = Convert.ToInt32(Console.ReadLine());
